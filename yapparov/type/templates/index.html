@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group">
+        <select id="select">
+            <option>- -</option>
+            <option>1 пост</option>
+            <option>2 пост</option>
+            <option>3 пост</option>
+        </select>
+    </div>
+    <div class="block" style="visibility: hidden;"></div>
+    <div class="block">
+        <div class="title">Итальянские роллы</div>
+        <div class="subtitle">если бы их увидели итальяци и японци им бы стало плохо</div>
+        <img src="{% static "img/rool.jpg" %}" alt="">
+    </div>
+    <div class="block">
+        <div class="title">А что так можно было?</div>
+        <div class="subtitle">гний</div>
+        <img src="{% static "img/gen.jpg" %}" alt="">
+    </div>
+    <div class="block">
+        <div class="title">Одинокая телефоная бутка со шляпкой</div>
+        <div class="subtitle">Выглядит красиво</div>
+        <img src="{% static "img/but.jpg" %}" alt="">
+    </div>
+
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+</html>
